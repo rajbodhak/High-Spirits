@@ -11,7 +11,7 @@ const RandomCocktail = () => {
     const handleButtonClick = async () => {
         setLoading(true);
         try {
-            const response = await fetch(`http://localhost:5500/api/cocktail/random-cocktail/`);
+            const response = await fetch(`https://high-spirits-backend.onrender.com/api/cocktail/random-cocktail/`);
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }

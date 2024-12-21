@@ -24,7 +24,7 @@ const SearchPage = () => {
         setLoading(true);
         setSearchAttempted(true);
         try {
-            const response = await fetch(`http://localhost:5500/api/cocktail/search/name/${cocktailName}`);
+            const response = await fetch(`https://high-spirits-backend.onrender.com/api/cocktail/search/name/${cocktailName}`);
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
